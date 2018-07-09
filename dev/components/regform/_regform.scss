@@ -1,0 +1,318 @@
+.sing-in-reg-section {
+  background-image: url("img/mainbg.png");
+  padding: 8px 0;
+  @include media($width-xs) {
+    padding: 12px 0;
+  }
+  @include media($width-mid) {
+    padding: 43px 0;
+  }
+  @include media($width-max) {
+    padding: 8px 0;
+  }
+  .sign-in-reg-box {
+    background-color: $mainwhite;
+    font-size: 0;
+  }
+  .form-title {
+    text-align: center;
+    font-family: $echo;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    width: 50%;
+    display: inline-block;
+    color: #a09f9f;
+    padding: 15px 0;
+    @include media($width-xs) {
+      font-size: 17.95px;
+      padding: 28px 0 13px 0;
+    }
+    @include media($width-mid) {
+      font-size: 38.28px;
+      padding: 60px 0 27px 0;
+    }
+    @include media($width-max) {
+      font-size: 12.5px;
+      padding: 15px 0;
+    }
+  }
+  .form-title-active {
+    color: #010101;
+    border-bottom: $mainred solid 2px;
+    @include media($width-xs) {
+      border-width: 3px;
+    }
+    @include media($width-mid) {
+      border-width: 7px;
+    }
+    @include media($width-max) {
+      border-width: 3px;
+    }
+  }
+  .sing-in-reg-form {
+    border-top: 2px solid #c3c3c3;
+    font-size: 0;
+    padding: 0 1% 21px 1%;
+    @include media($width-xs) {
+      border-width: 3px;
+      padding: 0 2% 30px 2%;
+    }
+    @include media($width-mid) {
+      border-width: 7px;
+      padding: 0 2% 84px 2%;
+    }
+    @include media($width-max) {
+      border-top: 2px solid #c3c3c3;
+      padding: 0 1% 21px 1%;
+    }
+  }
+  .form-item {
+    padding-top: 17px;
+    @include media($width-xs) {
+      padding-top: 28px;
+    }
+    @include media($width-mid) {
+      padding-top: 57px;
+    }
+    @include media($width-max) {
+      padding-top: 17px;
+    }
+    label {
+      width: 7%;
+      height: 30px;
+      background-position: center;
+      display: inline-block;
+      background-repeat: no-repeat;
+      margin-right: 6%;
+      @include media($width-xs) {
+        height: 40px;
+      }
+      @include media($width-mid) {
+        height: 85px;
+      }
+      @include media($width-max) {
+
+      }
+    }
+    input {
+      border: none;
+      outline: none;
+      width: 87%;
+      vertical-align: bottom;
+      height: 30px;
+      box-sizing: border-box;
+      border-bottom: #c6c7c9 solid 1px;
+      @include media($width-xs) {
+        height: 40px;
+      }
+      @include media($width-mid) {
+        height: 85px;
+        border-width: 2px;
+      }
+      @include media($width-max) {
+
+      }
+      &::-webkit-input-placeholder {
+        color: #c6c7c9;
+        font-size: 12.5px;
+        font-family: $museo500;
+        @include media($width-xs) {
+          font-size: 17.95px;
+        }
+        @include media($width-mid) {
+          font-size: 38.28px;
+        }
+        @include media($width-max) {
+          font-size: 17.95px;
+        }
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #c6c7c9;
+        font-size: 12.5px;
+        font-family: $museo500;
+        @include media($width-xs) {
+          font-size: 17.95px;
+        }
+        @include media($width-mid) {
+          font-size: 38.28px;
+        }
+        @include media($width-max) {
+          font-size: 17.95px;
+        }
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #c6c7c9;
+        font-size: 12.5px;
+        font-family: $museo500;
+        @include media($width-xs) {
+          font-size: 17.95px;
+        }
+        @include media($width-mid) {
+          font-size: 38.28px;
+        }
+        @include media($width-max) {
+          font-size: 17.95px;
+        }
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #c6c7c9;
+        font-size: 12.5px;
+        font-family: $museo500;
+        @include media($width-xs) {
+          font-size: 17.95px;
+        }
+        @include media($width-mid) {
+          font-size: 38.28px;
+        }
+        @include media($width-max) {
+          font-size: 17.95px;
+        }
+      }
+    }
+  }
+  .sing-in-tel-label {
+    background-image: url("img/regtelicon.png");
+    background-size: 16px 19px;
+    @include media($width-xs) {
+      background-size: 23px 27px;
+    }
+    @include media($width-mid) {
+      background-size: 49px 58px;
+    }
+    @include media($width-max) {
+      background-size: 16px 19px;
+    }
+  }
+  .sing-in-pas-label {
+    background-image: url("img/regpasicon.png");
+    background-size: 15px 18px;
+    @include media($width-xs) {
+      background-size: 20px 27px;
+    }
+    @include media($width-mid) {
+      background-size: 43px 58px;
+    }
+    @include media($width-max) {
+      background-size: 16px 19px;
+    }
+  }
+  .sing-in-email-label {
+    background-image: url("img/regmailicon.png");
+    background-size: 16px 12px;
+    @include media($width-xs) {
+      background-size: 23px 17px;
+    }
+    @include media($width-mid) {
+      background-size: 49px 36px;
+    }
+    @include media($width-max) {
+      background-size: 16px 19px;
+    }
+  }
+  .sing-in-name-label {
+    background-image: url("img/regnameicon.png");
+    background-size: 10px 14px;
+    @include media($width-xs) {
+      background-size: 15px 20px;
+    }
+    @include media($width-mid) {
+      background-size: 32px 43px;
+    }
+    @include media($width-max) {
+      background-size: 16px 19px;
+    }
+  }
+  .sing-in-surname-label {
+    background-image: url("img/regsurnameicon.png");
+    background-size: 16px 18px;
+    @include media($width-xs) {
+      background-size: 23px 26px;
+    }
+    @include media($width-mid) {
+      background-size: 49px 55px;
+    }
+    @include media($width-max) {
+      background-size: 16px 19px;
+    }
+  }
+  .red-button {
+    margin-top: 23px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    @include media($width-xs) {
+      margin-top: 33px;
+      height: 52px;
+      margin-bottom: 27px;
+    }
+    @include media($width-mid) {
+      margin-top: 73px;
+      height: 112px;
+      margin-bottom: 58px;
+    }
+    @include media($width-max) {
+      margin-top: 23px;
+      width: 100%;
+      height: 35px;
+      margin-bottom: 15px;
+    }
+  }
+  .form-text {
+    font-family: $museo500;
+    font-size: 12.5px;
+    color: #656565;
+    @include media($width-xs) {
+      font-size: 17.95px;
+    }
+    @include media($width-mid) {
+      font-size: 38.28px;
+    }
+    @include media($width-max) {
+      font-size: 12.5px;
+    }
+  }
+  .sing-in-forgot-pas {
+    text-transform: uppercase;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+    @include media($width-xs) {
+      padding-right: 27px;
+      font-size: 14px;
+    }
+    @include media($width-mid) {
+      font-size: 30px;
+      padding-right: 63px;
+    }
+    @include media($width-max) {
+      font-size: 12.5px;
+    }
+  }
+  .form-requred-terms {
+    margin: 23px 0;
+    @include media($width-xs) {
+      margin: 23px 0 33px 0;
+    }
+    @include media($width-mid) {
+      margin: 23px 0 79px 0;
+    }
+    @include media($width-max) {
+      margin: 23px 0;
+    }
+  }
+  .reg-form {
+    display: none;
+    .form-text:last-child {
+      line-height: 17px;
+      @include media($width-xs) {
+        line-height: 26px;
+      }
+      @include media($width-mid) {
+        line-height: 55px;
+      }
+      @include media($width-max) {
+        line-height: 17px;
+      }
+    }
+  }
+}
