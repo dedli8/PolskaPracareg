@@ -8,11 +8,69 @@
     padding: 43px 0;
   }
   @include media($width-max) {
-    padding: 8px 0;
+    padding: 0;
+  }
+  .container{
+    @include media($width-max){
+      width: 1090px;
+      height: 695px;
+      padding: 55px 25px 0 25px;
+      background-image: url("img/regbanner.jpg");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+  }
+  .enter-to-access-box{
+    display: none;
+    float: left;
+    padding: 30px 35px 39px 35px;
+    background-color: $mainwhite;
+    border-radius: 9px;
+    @include media($width-max){
+      display: inline-block;
+    }
+  }
+  .enter-to-access-title{
+    font-size: 20.83px;
+    font-family: $museo500;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .enter-to-access-list{
+    color: #5d5d5d;
+    font-family: $museo300;
+  }
+  .enter-to-access-item{
+    margin-bottom: 16px;
+    span:first-child{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 33.33px;
+      margin-right: 10px;
+      color: #a8a8a8;
+    }
+    span:last-child{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16.67px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
   .sign-in-reg-box {
     background-color: $mainwhite;
     font-size: 0;
+    @include media($width-max){
+      float: right;
+      width: 335px;
+      border-radius: 9px;
+      text-align: center;
+      padding: 0 38px;
+      box-sizing: border-box;
+    }
   }
   .form-title {
     text-align: center;
@@ -22,7 +80,7 @@
     width: 50%;
     display: inline-block;
     color: #a09f9f;
-    padding: 15px 0;
+    padding: 21px 0 9px 0;
     @include media($width-xs) {
       font-size: 17.95px;
       padding: 28px 0 13px 0;
@@ -32,8 +90,9 @@
       padding: 60px 0 27px 0;
     }
     @include media($width-max) {
-      font-size: 12.5px;
-      padding: 15px 0;
+      font-size: 11.49px;
+      font-family: $echobold;
+      padding: 20px 0 10px 0;
     }
   }
   .form-title-active {
@@ -46,7 +105,7 @@
       border-width: 7px;
     }
     @include media($width-max) {
-      border-width: 3px;
+      border-width: 2px;
     }
   }
   .sing-in-reg-form {
@@ -62,8 +121,8 @@
       padding: 0 2% 84px 2%;
     }
     @include media($width-max) {
-      border-top: 2px solid #c3c3c3;
-      padding: 0 1% 21px 1%;
+      border-width: 2px;
+      padding: 0 0 24px 0;
     }
   }
   .form-item {
@@ -88,10 +147,10 @@
         height: 40px;
       }
       @include media($width-mid) {
-        height: 85px;
+        height: 87px;
       }
       @include media($width-max) {
-
+        height: 26px;
       }
     }
     input {
@@ -106,11 +165,11 @@
         height: 40px;
       }
       @include media($width-mid) {
-        height: 85px;
+        height: 78px;
         border-width: 2px;
       }
       @include media($width-max) {
-
+        height: 26px;
       }
       &::-webkit-input-placeholder {
         color: #c6c7c9;
@@ -123,7 +182,7 @@
           font-size: 38.28px;
         }
         @include media($width-max) {
-          font-size: 17.95px;
+          font-size: 11.49px;
         }
       }
       &::-moz-placeholder { /* Firefox 19+ */
@@ -137,7 +196,7 @@
           font-size: 38.28px;
         }
         @include media($width-max) {
-          font-size: 17.95px;
+          font-size: 11.49px;
         }
       }
       &:-ms-input-placeholder { /* IE 10+ */
@@ -151,7 +210,7 @@
           font-size: 38.28px;
         }
         @include media($width-max) {
-          font-size: 17.95px;
+          font-size: 11.49px;
         }
       }
       &:-moz-placeholder { /* Firefox 18- */
@@ -165,7 +224,7 @@
           font-size: 38.28px;
         }
         @include media($width-max) {
-          font-size: 17.95px;
+          font-size: 11.49px;
         }
       }
     }
@@ -180,7 +239,7 @@
       background-size: 49px 58px;
     }
     @include media($width-max) {
-      background-size: 16px 19px;
+      background-size: 15px 17px;
     }
   }
   .sing-in-pas-label {
@@ -193,7 +252,7 @@
       background-size: 43px 58px;
     }
     @include media($width-max) {
-      background-size: 16px 19px;
+      background-size: 13px 17px;
     }
   }
   .sing-in-email-label {
@@ -206,7 +265,7 @@
       background-size: 49px 36px;
     }
     @include media($width-max) {
-      background-size: 16px 19px;
+      background-size: 15px 11px;
     }
   }
   .sing-in-name-label {
@@ -246,15 +305,16 @@
       margin-bottom: 27px;
     }
     @include media($width-mid) {
-      margin-top: 73px;
+      margin-top: 70px;
       height: 112px;
       margin-bottom: 58px;
     }
     @include media($width-max) {
-      margin-top: 23px;
-      width: 100%;
-      height: 35px;
-      margin-bottom: 15px;
+      margin-top: 27px;
+      font-size: 11.49px;
+      height: 27px;
+      width: 188px;
+      margin-bottom: 11px;
     }
   }
   .form-text {
@@ -268,7 +328,7 @@
       font-size: 38.28px;
     }
     @include media($width-max) {
-      font-size: 12.5px;
+      font-size: 11.79px;
     }
   }
   .sing-in-forgot-pas {
@@ -276,7 +336,9 @@
     text-align: right;
     cursor: pointer;
     display: block;
+    margin-top: 20px;
     @include media($width-xs) {
+      margin-top: 0;
       padding-right: 27px;
       font-size: 14px;
     }
@@ -285,19 +347,35 @@
       padding-right: 63px;
     }
     @include media($width-max) {
-      font-size: 12.5px;
+      font-size: 10px;
+      padding-right: 35px;
+      margin-bottom: 11px;
+    }
+  }
+  .sing-in-first-time{
+    font-family: $museo100;
+    display: none;
+    font-size: 8.96px;
+    color: $mainred;
+    text-align: center;
+    position: relative;
+    left: -13px;
+    width: 285px;
+    @include media($width-max){
+      display: block;
     }
   }
   .form-requred-terms {
-    margin: 23px 0;
+    margin: 23px 0 23px 0;
     @include media($width-xs) {
       margin: 23px 0 33px 0;
     }
     @include media($width-mid) {
-      margin: 23px 0 79px 0;
+      margin: 23px 0 70px 0;
     }
     @include media($width-max) {
       margin: 23px 0;
+      text-align: left;
     }
   }
   .reg-form {
@@ -311,7 +389,8 @@
         line-height: 55px;
       }
       @include media($width-max) {
-        line-height: 17px;
+        text-align: left;
+        line-height: 15px;
       }
     }
   }
